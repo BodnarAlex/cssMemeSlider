@@ -1,10 +1,6 @@
-html * {
-    border: 1px solid black;
-}
-
 body {
     width: 80vw;
-    height: 99vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -37,11 +33,13 @@ main {
     color: white;
     padding: 3%;
     border-radius: 2%;
+    gap: 2vh;
 }
 
 ul {
     text-align: center;
     padding: 0;
+    margin: 0;
 }
 
 ul li {
@@ -65,13 +63,15 @@ img {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 0 2%;
+    height: 5vh;
 }
 
 label {
     display: none;
 }
-
+input{
+    height: 3vh;
+}
 .active_label {
     display: block;
 }
@@ -109,4 +109,35 @@ footer,
 .year_create {
     align-self: center;
     justify-self: center;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 100vw;
+    }
+    .slider_extra{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 1.2rem;
+    }
+    .image_github,
+    .footer_content {
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .slider_extra {
+        flex-flow: column-reverse nowrap;
+        gap: 2vh;
+        align-items: center;
+        height: 100%;
+    }
+    .image_github,
+    .footer_content {
+        width: 10vw;
+        height: 10vw;
+    }
 }
