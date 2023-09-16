@@ -13,13 +13,20 @@ body {
 
 header, footer{
     width: 100%;
-    min-height: 10%;
+    min-height: 15%;
+    background: rgba(101,145,32,0.5);
+
 }
 
+h1{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 3rem;
+}
+/*MAIN*/
 main{
     margin: 0 auto;
 }
-
 .slider_container{
     display: flex;
     flex-flow: column nowrap;
@@ -58,4 +65,32 @@ label {
 }
 .active_label{
     display: block;
+}
+
+/*FOOTER*/
+.image_github{
+    width: 4vw;
+    height: 4vw;
+    background-image: url(../img/github.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer, .footer_github {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.contact__content.footer_content, .footer_github{
+    align-self: center;
+
+}
+.footer_content, .footer_empty{
+    width: 4vw;
+    height: 4vw;
+}
+.year_create{
+    align-self: center;
+    justify-self: center;
 }
