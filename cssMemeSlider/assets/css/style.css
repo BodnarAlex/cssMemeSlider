@@ -24,39 +24,78 @@ h1 {
 /*MAIN*/
 main {
     margin: 0 auto;
+    background-color: black;
+    padding: 2vh;
+    height: 60%;
+    width: 80vh;
+    border-radius: 2%;
+    box-sizing: border-box;
 }
 
-.slider_container {
+.container {
     display: flex;
     flex-flow: column nowrap;
-    background-color: black;
     color: white;
-    padding: 3%;
-    border-radius: 2%;
     gap: 2vh;
+    overflow: hidden;
 }
 
-ul {
-    text-align: center;
-    padding: 0;
-    margin: 0;
+
+.navigator {
+    display: flex;
+    bottom: 20px;
 }
 
-ul li {
+.navigator .bar {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: blue;
+}
+
+input[type='radio'] {
     display: none;
-    text-decoration: none;
 }
 
-ul .active_image {
-    display: block;
+.slides {
+    display: flex;
+    height: 100%;
+    width: 500%;
+}
+
+.image {
+    width: 20%;
+    text-align: center;
+    transition: 1s ease;
+    border-radius: 2%;
+
 }
 
 img {
     width: 100%;
     height: 100%;
-    max-height: 60vh;
     object-fit: cover;
-    border-radius: 2%;
+}
+
+#btn1:checked~.first {
+    margin-left: 0;
+}
+
+#btn2:checked~.first {
+    margin-left: -20%;
+}
+
+#btn3:checked~.first {
+    margin-left: -40%;
+}
+
+#btn4:checked~.first {
+    margin-left: -60%;
+}
+
+#btn5:checked~.first {
+    margin-left: -80%;
 }
 
 .slider_extra {
@@ -66,13 +105,11 @@ img {
     height: 5vh;
 }
 
-label {
+.slider_desc div {
     display: none;
 }
-input{
-    height: 3vh;
-}
-.active_label {
+
+.slider_desc .active_label {
     display: block;
 }
 
@@ -110,17 +147,24 @@ footer,
     align-self: center;
     justify-self: center;
 }
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1260px) {
     body {
         width: 100vw;
     }
-    .slider_extra{
+}
+
+@media only screen and (max-width: 1000px) {
+    .main{
+        width: 100%;
+    }
+    .slider_extra {
         font-size: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1.2rem;
     }
+
     .image_github,
     .footer_content {
         width: 7vw;
@@ -128,13 +172,19 @@ footer,
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 880px) {
+    main {
+        height: auto;
+        width: 90vw;
+    }
+
     .slider_extra {
         flex-flow: column-reverse nowrap;
         gap: 2vh;
         align-items: center;
         height: 100%;
     }
+
     .image_github,
     .footer_content {
         width: 10vw;

@@ -13,31 +13,36 @@
         <h1>CssMemeSlider</h1>
     </header>
     <main>
-        <div class="slider_container">
-            <div>
-                <ul>
-                <li class="active_image"><img src="assets/img/one.jpg" alt="ent saw a sawmill"></li>
-                <li><img src="assets/img/two.jpg" alt="shocked creature"></li>
-                <li><img src="assets/img/three.jpg" alt="something vaguely familiar"></li>
-                <li><img src="assets/img/four.jpg" alt="it was his friend"></li>
-                <li><img src="assets/img/five.jpg" alt="Sanya is silent"></li>
-                </ul>
+        <div class="container">
+            <div class="slides">
+                <input type="radio" name="common" id="btn1" checked>
+                <input type="radio" name="common" id="btn2" >
+                <input type="radio" name="common" id="btn3" >
+                <input type="radio" name="common" id="btn4" >
+                <input type="radio" name="common" id="btn5" >
+        
+                <div class="image first"><img src="assets/img/one.jpg"></div>
+                <div class="image"><img src="assets/img/two.jpg"></div>
+                <div class="image"><img src="assets/img/three.jpg"></div>
+                <div class="image"><img src="assets/img/four.jpg"></div>
+                <div class="image"><img src="assets/img/five.jpg"></div>
             </div>
            
-            <div class="slider_extra">
+            <div class="slider_extra">   
                 <div class="slider_desc">
-                    <label class="active_label" for="slides_one">ent saw a sawmill</label>
-                    <label for="slides_two">shocked creature</label>
-                    <label for="slides_three">something vaguely familiar</label>
-                    <label for="slides_four">it was his friend</label>
-                    <label for="slides_five">Sanya is silent</label>
+                    <div class="active_label" for="slides_one">ent saw a sawmill</div>
+                    <div for="slides_two">shocked creature</div>
+                    <div for="slides_three">something vaguely familiar</div>
+                    <div for="slides_four">it was his friend</div>
+                    <div for="slides_five">Sanya is silent</div>
                 </div>
-                <div class="navigation">
-                    <input type="radio" name="slides" id="slides_one" checked>
-                    <input type="radio" name="slides" id="slides_two">
-                    <input type="radio" name="slides" id="slides_three">
-                    <input type="radio" name="slides" id="slides_four">
-                    <input type="radio" name="slides" id="slides_five">
+
+                <div class="navigator">
+                    <label for="btn1" class="bar"></label>
+                    <label for="btn2" class="bar"></label>
+                    <label for="btn3" class="bar"></label>
+                    <label for="btn4" class="bar"></label>
+                    <label for="btn5" class="bar"></label>
                 </div>
             </div>
         </div>
@@ -46,7 +51,7 @@
         <div class="footer_github">
             <div class="contact__content footer_content">
                 <a href="https://github.com/BodnarAlex">
-                    <div class="image footer_image image_github"></div>
+                    <div class="footer_image image_github"></div>
                 </a>
             </div>
         </div>
@@ -57,3 +62,4 @@
     </footer>
 </body>
 </html>
+
