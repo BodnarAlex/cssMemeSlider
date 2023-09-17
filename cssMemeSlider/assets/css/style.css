@@ -65,6 +65,7 @@ img {
 
 .navigator {
     display: flex;
+    flex: 1;
     width: 12%;
     justify-content: space-between;
 }
@@ -100,7 +101,7 @@ img {
     margin-left: 0;
 }
 
-#btn2:checked ~ .slides .first {
+#btn2:checked ~ .slides .first  {
     margin-left: -20%;
 }
 
@@ -116,19 +117,47 @@ img {
     margin-left: -80%;
 }
 
+#btn1:checked ~ .slider_extra .start_label {
+    margin-left: 0;
+}
+
+#btn2:checked ~ .slider_extra .start_label {
+    margin-left: -25%;
+}
+
+#btn3:checked ~ .slider_extra .start_label {
+    margin-left: -66%;
+}
+
+#btn4:checked ~ .slider_extra .start_label {
+    margin-left: -150%;
+}
+
+#btn5:checked ~ .slider_extra .start_label {
+    margin-left: -400%;
+}
+
 .slider_extra {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 5vh;
+    gap: 30%;
+}
+.slider_desc_container{
+    width: 100%;
+    overflow: hidden;
+}
+.slider_desc{
+    width: 500%;
+    display: flex;
+    justify-content: start;
+    flex-flow: row nowrap;
 }
 
-.slider_desc div {
-    display: none;
-}
-
-.slider_desc .active_label {
-    display: block;
+.slider_desc div{
+    width: 100%;
+    transition: 1s ease;
 }
 
 /*FOOTER*/
@@ -172,8 +201,9 @@ footer,
 }
 
 @media only screen and (max-width: 1000px) {
-    .main{
+    main{
         width: 100%;
+        height: auto;
     }
     .slider_extra {
         font-size: 1rem;
