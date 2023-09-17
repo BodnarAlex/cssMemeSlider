@@ -24,7 +24,7 @@ h1 {
 /*MAIN*/
 main {
     margin: 0 auto;
-    background-color: black;
+    background-color: #25282a;
     padding: 2vh;
     height: 60%;
     width: 80vh;
@@ -38,20 +38,6 @@ main {
     color: white;
     gap: 2vh;
     overflow: hidden;
-}
-
-
-.navigator {
-    display: flex;
-    bottom: 20px;
-}
-
-.navigator .bar {
-    height: 10px;
-    width: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: blue;
 }
 
 input[type='radio'] {
@@ -69,7 +55,6 @@ input[type='radio'] {
     text-align: center;
     transition: 1s ease;
     border-radius: 2%;
-
 }
 
 img {
@@ -78,23 +63,56 @@ img {
     object-fit: cover;
 }
 
-#btn1:checked~.first {
+.navigator {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+}
+
+.navigator .bar {
+    box-sizing: border-box;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #71abff;
+}
+
+.navigator .bar:hover {
+    background: white;
+}
+
+.navigator .bar:active {
+    background: white;
+    border: 1px solid #71abff;
+}
+
+#btn1:checked ~ .slider_extra .forbtn1,
+#btn2:checked ~ .slider_extra .forbtn2,
+#btn3:checked ~ .slider_extra .forbtn3,
+#btn4:checked ~ .slider_extra .forbtn4,
+#btn5:checked ~ .slider_extra .forbtn5{
+    background: #25282a;
+    border: 1px solid #71abff;
+}
+
+#btn1:checked ~ .slides .first {
     margin-left: 0;
 }
 
-#btn2:checked~.first {
+#btn2:checked ~ .slides .first {
     margin-left: -20%;
 }
 
-#btn3:checked~.first {
+#btn3:checked ~ .slides .first {
     margin-left: -40%;
 }
 
-#btn4:checked~.first {
+#btn4:checked ~ .slides .first {
     margin-left: -60%;
 }
 
-#btn5:checked~.first {
+#btn5:checked ~ .slides .first {
     margin-left: -80%;
 }
 
