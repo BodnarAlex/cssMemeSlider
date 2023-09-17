@@ -10,9 +10,8 @@ body {
 header,
 footer {
     width: 100%;
-    min-height: 15%;
+    max-height: 15%;
     background: rgba(101, 145, 32, 0.5);
-
 }
 
 h1 {
@@ -26,7 +25,6 @@ main {
     margin: 0 auto;
     background-color: #25282a;
     padding: 2vh;
-    height: 60%;
     width: 80vh;
     border-radius: 2%;
     box-sizing: border-box;
@@ -205,30 +203,10 @@ footer,
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    main{
-        width: 100%;
-        height: auto;
-    }
-    .slider_extra {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 1.2rem;
-    }
-
-    .image_github,
-    .footer_content {
-        width: 7vw;
-        height: 7vw;
-    }
-}
-
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 800px) {
     main {
-        height: auto;
-        width: 90vw;
+        max-height: 65vh;
+        max-width: 90vw;
     }
 
     .slider_extra {
@@ -236,6 +214,10 @@ footer,
         gap: 2vh;
         align-items: center;
         height: 100%;
+    }
+
+    footer {
+        font-size: 1.2rem;
     }
 
     .image_github,
