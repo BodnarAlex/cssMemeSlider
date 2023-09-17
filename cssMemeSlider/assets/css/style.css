@@ -63,36 +63,11 @@ img {
     object-fit: cover;
 }
 
-.navigator {
-    display: flex;
-    flex: 1;
-    width: 12%;
-    justify-content: space-between;
-}
-
-.navigator .bar {
-    box-sizing: border-box;
-    height: 10px;
-    width: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: #71abff;
-}
-
-.navigator .bar:hover {
-    background: white;
-}
-
-.navigator .bar:active {
-    background: white;
-    border: 1px solid #71abff;
-}
-
-#btn1:checked ~ .slider_extra .forbtn1,
-#btn2:checked ~ .slider_extra .forbtn2,
-#btn3:checked ~ .slider_extra .forbtn3,
-#btn4:checked ~ .slider_extra .forbtn4,
-#btn5:checked ~ .slider_extra .forbtn5{
+#btn1:checked ~ .slider_extra .forbtn1 div,
+#btn2:checked ~ .slider_extra .forbtn2 div,
+#btn3:checked ~ .slider_extra .forbtn3 div,
+#btn4:checked ~ .slider_extra .forbtn4 div,
+#btn5:checked ~ .slider_extra .forbtn5 div{
     background: #25282a;
     border: 1px solid #71abff;
 }
@@ -142,7 +117,6 @@ img {
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 5vh;
-    gap: 30%;
 }
 .slider_desc_container{
     width: 100%;
@@ -158,6 +132,37 @@ img {
 .slider_desc div{
     width: 100%;
     transition: 1s ease;
+}
+
+.navigator {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.navigator .bar {
+    padding: 5%;
+    height: 0.8rem;
+    width: 0.8rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.navigator .bar div{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #71abff;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.navigator .bar:hover div{
+    background: white;
+}
+
+.navigator .bar:active div{
+    background: white;
+    border: 1px solid #71abff;
 }
 
 /*FOOTER*/
