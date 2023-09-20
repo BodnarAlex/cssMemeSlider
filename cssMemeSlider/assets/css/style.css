@@ -67,7 +67,7 @@ img {
 #btn4:checked ~ .slider_extra .forbtn4 div,
 #btn5:checked ~ .slider_extra .forbtn5 div{
     background: #25282a;
-    border: 1px solid #71abff;
+    border: 0.1rem solid #71abff;
 }
 
 #btn1:checked ~ .slides .first {
@@ -160,7 +160,7 @@ img {
 
 .navigator .bar:active div{
     background: white;
-    border: 1px solid #71abff;
+    border: 0.1rem solid #71abff;
 }
 
 /*FOOTER*/
