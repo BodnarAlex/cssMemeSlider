@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>cssMemeSlider</title>
 </head>
+
 <body>
+    <header>
+        <h1>CssMemeSlider</h1>
+    </header>
+    <main>
+        <div class="container">
+            <input type="radio" name="common" id="btn1" checked>
+            <input type="radio" name="common" id="btn2">
+            <input type="radio" name="common" id="btn3">
+            <input type="radio" name="common" id="btn4">
+            <input type="radio" name="common" id="btn5">
+
+            <div class="slides">       
+                <div class="image first"><img src="assets/img/one.jpg"></div>
+                <div class="image"><img src="assets/img/two.jpg"></div>
+                <div class="image"><img src="assets/img/three.jpg"></div>
+                <div class="image"><img src="assets/img/four.jpg"></div>
+                <div class="image"><img src="assets/img/five.jpg"></div>
+            </div>
+           
+            <div class="slider_extra">
+                <div class="slider_desc_container">
+                    <div class="slider_desc">
+                        <div class="start_label">ent saw a sawmill</div>
+                        <div>shocked creature</div>
+                        <div>something vaguely familiar</div>
+                        <div>it was his friend</div>
+                        <div>Sanya is silent</div>
+                    </div>
+                </div>   
+                
+                <div class="navigator">
+                    <label for="btn1" class="forbtn1 bar"><div></div></label>
+                    <label for="btn2" class="forbtn2 bar"><div></div></label>
+                    <label for="btn3" class="forbtn3 bar"><div></div></label>
+                    <label for="btn4" class="forbtn4 bar"><div></div></label>
+                    <label for="btn5" class="forbtn5 bar"><div></div></label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_github">
+            <div class="contact__content footer_content">
+                <a href="https://github.com/BodnarAlex">
+                    <div class="footer_image image_github"></div>
+                </a>
+            </div>
+        </div>
+        <div class="year_create">
+            <p>© 2023 by Aleksandra Bodnar</p>
+        </div>
+        <div class="footer_empty"></div>
+    </footer>
 </body>
 </html>
