@@ -1,1 +1,1 @@
-https://bodnaralex.github.io/rsschool-cv/
+https://bodnaralex.github.io/cssMemeSlider/cssMemeSlider/index.html
